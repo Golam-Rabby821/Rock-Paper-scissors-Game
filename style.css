@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+  --text-color:#1E1F32;
+  --back-color:#060B31;
+}
+body{
+  font-family:'Asap',sans-serif;
+}
+#heading{
+  height:50px;
+}
+#heading h1{
+  margin: 10px auto;
+  text-align:center;
+  color:var(--text-color);
+}
+#main{
+  background-color: var(--back-color);
+  height:100vh;
+  padding-top:20px;
+  color:white;
+}
+.score-board{
+  margin:20px auto;
+ width:30%;
+ height:40px;
+  padding:20px;
+  border:4px solid white;
+  border-radius: 8px;
+  color:white;
+  position:relative;
+}
+#in-line{
+  text-align: center;
+
+  font-size: 35px;
+  
+}
+.badge{
+  border:2px solid white;
+  text-align: center;
+  background: #B94012;
+}
+
+#user {
+  position: absolute;
+  top: 25px;
+  left: -25px;
+  padding: 3px;
+  border-radius:3px;
+}
+#computer {
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  padding: 3px;
+  border-radius:3px;
+}
+.winning-message{
+  text-align:center;
+  margin-bottom:30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.choices{
+  text-align: center;
+}
+.choice:hover{ 
+cursor:pointer;
+background-color:#0F0B17;
+
+}
+.choice {
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0 20px;
+  /*transition: all .3s ease;*/
+}
+#last-text {
+  text-align:center; 
+  margin-top: 20px;
+}
+
+.green-glow {
+  border: 5px solid #20D820;
+  box-shadow:0 0 16px #22A822;
+}
+
+.red-glow {
+  border: 4px solid red;
+  box-shadow: 0 0 16px #d01115;
+
+}
+
+.gray-glow {
+  border: 4px solid gray;
+  box-shadow: 0 0 16px #25292b;
+}
