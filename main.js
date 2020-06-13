@@ -15,6 +15,7 @@ function winMessage() {
   computerScore=0;
   user_score.innerHTML=userScore;
   comp_score.innerHTML=computerScore;
+  result_div.innerHTML="Rock beats Scissors. You win!! " 
   alert("🎉 CONGRATULATIONS 🎉"+"\n\n"+"You have won the match 👏");
   
 }
@@ -24,6 +25,7 @@ function loseMessage() {
   computerScore = 0;
   user_score.innerHTML = userScore;
   comp_score.innerHTML = computerScore;
+  result_div.innerHTML="Rock beats Scissors. You win!! " 
   alert("Opps, buddy. You have lost the match 💔 " + "\n\n" + "Better luck next time. 🤞");
 
 }
