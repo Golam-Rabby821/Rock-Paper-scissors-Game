@@ -9,6 +9,7 @@ const scissors_div=document.getElementById("Scissors");
 const result_div=document.querySelector(".winning-message");
 const user_score=document.getElementById("user-score");
 const comp_score=document.getElementById("computer-score");
+let user_name=prompt("Enter your name:");
 
 function winMessage() {
   userScore=0;
@@ -16,7 +17,7 @@ function winMessage() {
   user_score.innerHTML=userScore;
   comp_score.innerHTML=computerScore;
   result_div.innerHTML="Rock beats Scissors. You win!! " 
-  alert("🎉 CONGRATULATIONS 🎉"+"\n\n"+"You have won the match 👏");
+  alert("🎉 CONGRATULATIONS 🎉"+"\n\n"+ user_name+"\n\n"+"You have won the match 👏");
   
 }
 
@@ -26,7 +27,7 @@ function loseMessage() {
   user_score.innerHTML = userScore;
   comp_score.innerHTML = computerScore;
   result_div.innerHTML="Rock beats Scissors. You win!! " 
-  alert("Opps, buddy. You have lost the match 💔 " + "\n\n" + "Better luck next time. 🤞");
+  alert("Opps,"+user_name+". You have lost the match 💔 "+ "\n\n" + "Better luck next time. 🤞");
 
 }
 
